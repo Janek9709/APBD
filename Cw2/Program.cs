@@ -1,22 +1,25 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace Cw2
 {
-    class Program
+    public class Program
     {
         static void Main(string[] args)
         {
+            string projectDirectory = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName).FullName;
+            string path = @projectDirectory + "/DaneDoWczytania/dane.csv";
 
-            string path = @"P:\FTP(Public)\pgago\APBD\Polish\Zajęcia 2\dane.csv";
             var hashSet = new HashSet<Student>(new OwnComparator());
-            System.IO.StreamWriter error = new System.IO.StreamWriter(@"Z:\APBD\APBD\Cw2\log.txt", false);
+
+            System.IO.StreamWriter error = new System.IO.StreamWriter(@projectDirectory + "/log.txt", false);
+
             if (!File.Exists(path))
             {
                 string text = "File not found, wrong path";
                 error.WriteLine(text);
-                //nie wiem czy potrzeba tu try
                 try
                 {
                     throw new FileNotFoundException("Plik nie istnieje");
@@ -25,6 +28,7 @@ namespace Cw2
                 {
                     // Write error.
                     Console.WriteLine(ex);
+                    Environment.Exit(1);
                 }
             }
 
@@ -60,10 +64,13 @@ namespace Cw2
                         {
                             imie = student[0],
                             nazwisko = student[1],
-                            kierunek = student[2],
-                            tryb = student[3],
-                            numer = Int32.Parse(student[4]),
-                            data = DateTime.Parse(student[5]),
+                            studies = new Studies
+                            {
+                                kierunek = student[2],
+                                tryb = student[3]
+                            },
+                            numer = "s"+(student[4]),
+                            data = DateTime.Parse(student[5]).ToShortDateString(),
                             mail = student[6],
                             imieMatki = student[7],
                             imieOjca = student[8]
@@ -81,38 +88,55 @@ namespace Cw2
                     }
                 }
             }
+            FileStream writer = new FileStream(@projectDirectory+"/data.xml", FileMode.Create);
+            XmlRootAttribute root = new XmlRootAttribute("uczelnia");
+            //XmlElementAttribute attr =  new XmlElementAttribute("Alumni", typeof(Graduate));
 
-            //tu dopisz by zapisywalo do xmla
-        }
-    }
+            //XmlSerializer serializer = new XmlSerializer(typeof(HashSet<Student>), root);
+            XmlSerializer serializer = new XmlSerializer(typeof(SummaryArray), root);
 
-    [Serializable]
-    internal class Student
-    {
-        [XmlElement(ElementName = "Imie")]
-        public string imie { get; set; }
-        public string nazwisko { get; set; }
-        public string kierunek { get; set; }
-        public string tryb { get; set; }
-        public int numer { get; set; }
-        public DateTime data { get; set; }
-        public string mail { get; set; }
-        public string imieMatki { get; set; }
-        public string imieOjca { get; set; }
+            var hashSetActive = new HashSet<ActiveStudies>();
+            //logika dodawania do tego hashsetu
+            var numberOfComputerScience = 0;
+            var numberOfNewMediaArt = 0;
+            foreach (Student tmp in hashSet)
+            {
+                if (tmp.studies.kierunek.Contains("Informatyka"))
+                {
+                    numberOfComputerScience++;
+                }
+                else
+                {
+                    numberOfNewMediaArt++;
+                }
+            }
 
-    }
+            var activeStudentTmp = new ActiveStudies
+            {
+                name = "Computer Science",
+                numberOfStudents = numberOfComputerScience
+            };
 
-    internal class OwnComparator : IEqualityComparer<Student>
-    {
-        public bool Equals(Student x, Student y)
-        {
-            return StringComparer.InvariantCultureIgnoreCase.Equals($"{x.imie} {x.nazwisko} {x.numer}",
-                $"{y.imie} {y.nazwisko} {y.numer}");
-        }
+            var activeStudentTmp2 = new ActiveStudies
+            {
+                name = "New Media Art",
+                numberOfStudents = numberOfNewMediaArt
+            };
 
-        public int GetHashCode(Student obj)
-        {
-            return StringComparer.CurrentCultureIgnoreCase.GetHashCode($"{obj.imie} {obj.nazwisko} {obj.numer}");
+
+            hashSetActive.Add(activeStudentTmp);
+            hashSetActive.Add(activeStudentTmp2);
+
+            var getOverall = new SummaryArray
+            {
+                createdAt = DateTime.Today.ToString("dd-MM-yyyy"),
+                author = "Jan Biniek",
+                studenci = hashSet,
+                activeStudents = hashSetActive
+            };
+
+            //serializer.Serialize(writer, hashSet);
+            serializer.Serialize(writer, getOverall);
         }
     }
 }
