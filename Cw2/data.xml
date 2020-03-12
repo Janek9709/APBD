@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<uczelnia xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema">
+<uczelnia createdAt="13.03.2020" author="Jan Biniek">
   <studenci>
     <student indexNumber="s459">
       <fname>Paweł</fname>
@@ -2367,9 +2367,12 @@
     </student>
   </studenci>
   <activeStudents>
-    <studies name="Computer Science" numberOfStudents="131" />
-    <studies name="New Media Art" numberOfStudents="66" />
+    <studies name="Informatyka dzienne" numberOfStudents="106" />
+    <studies name="Sztuka Nowych Mediów dzienne" numberOfStudents="64" />
+    <studies name="Sztuka Nowych Mediów zaoczne" numberOfStudents="1" />
+    <studies name="Informatyka dzienne po angielsku" numberOfStudents="23" />
+    <studies name="Zarządzanie informacją dzienne (kierunek Zarządzanie)" numberOfStudents="1" />
+    <studies name="Informatyka internetowe magisterskie" numberOfStudents="1" />
+    <studies name="Informatyka zaoczne" numberOfStudents="1" />
   </activeStudents>
-  <createdAt>12-03-2020</createdAt>
-  <author>Jan Biniek</author>
 </uczelnia>

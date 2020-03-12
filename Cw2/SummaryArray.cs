@@ -8,9 +8,9 @@ namespace Cw2
     [Serializable]
     public class SummaryArray
     {
-        [XmlElement(ElementName = "createdAt")]
+        [XmlAttribute]
         public string createdAt { get; set; }
-        [XmlElement(ElementName = "author")]
+        [XmlAttribute]
         public string author { get; set; }
         
         public HashSet<Student> studenci;

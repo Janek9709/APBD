@@ -88,6 +88,8 @@ namespace Cw2
                     }
                 }
             }
+            XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
+            ns.Add("", "");
             FileStream writer = new FileStream(@projectDirectory+"/data.xml", FileMode.Create);
             XmlRootAttribute root = new XmlRootAttribute("uczelnia");
             //XmlElementAttribute attr =  new XmlElementAttribute("Alumni", typeof(Graduate));
@@ -95,48 +97,65 @@ namespace Cw2
             //XmlSerializer serializer = new XmlSerializer(typeof(HashSet<Student>), root);
             XmlSerializer serializer = new XmlSerializer(typeof(SummaryArray), root);
 
-            var hashSetActive = new HashSet<ActiveStudies>();
+            var hashSetActive = new HashSet<ActiveStudies>(new ActiveOwnComparator());
+
+            var hashSetActiveFinalTrue = new HashSet<ActiveStudies>(new ActiveOwnComparator());
             //logika dodawania do tego hashsetu
             var numberOfComputerScience = 0;
-            var numberOfNewMediaArt = 0;
+
             foreach (Student tmp in hashSet)
             {
-                if (tmp.studies.kierunek.Contains("Informatyka"))
+                var activeStudentTmp = new ActiveStudies
                 {
-                    numberOfComputerScience++;
-                }
-                else
+                    name = tmp.studies.kierunek,
+                    numberOfStudents = numberOfComputerScience
+                };
+
+                hashSetActive.Add(activeStudentTmp);
+            }
+
+            Dictionary<string, int> dictionary = new Dictionary<string, int>();
+
+            foreach(var tmp2 in hashSetActive)
+            {
+                dictionary.Add(tmp2.name, 0);
+            }
+
+            foreach (var tmp in hashSet)
+            {
+                foreach (var tmp2 in hashSetActive)
                 {
-                    numberOfNewMediaArt++;
+                    if (tmp.studies.kierunek == tmp2.name && dictionary.ContainsKey(tmp.studies.kierunek))
+                    {
+                        dictionary[tmp.studies.kierunek] += 1; 
+                    }
                 }
             }
 
-            var activeStudentTmp = new ActiveStudies
+            foreach(KeyValuePair<string, int> kvp in dictionary)
             {
-                name = "Computer Science",
-                numberOfStudents = numberOfComputerScience
-            };
+                var activeStudentTmp = new ActiveStudies
+                {
+                    name = kvp.Key,
+                    numberOfStudents = kvp.Value
+                };
 
-            var activeStudentTmp2 = new ActiveStudies
-            {
-                name = "New Media Art",
-                numberOfStudents = numberOfNewMediaArt
-            };
+                hashSetActiveFinalTrue.Add(activeStudentTmp);
+            }
 
 
-            hashSetActive.Add(activeStudentTmp);
-            hashSetActive.Add(activeStudentTmp2);
 
             var getOverall = new SummaryArray
             {
-                createdAt = DateTime.Today.ToString("dd-MM-yyyy"),
+                createdAt = DateTime.Today.ToString("dd.MM.yyyy"),
                 author = "Jan Biniek",
                 studenci = hashSet,
-                activeStudents = hashSetActive
+                activeStudents = hashSetActiveFinalTrue
             };
 
-            //serializer.Serialize(writer, hashSet);
-            serializer.Serialize(writer, getOverall);
+            serializer.Serialize(writer, getOverall, ns);
+
+           
         }
     }
 }
