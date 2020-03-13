@@ -11,13 +11,26 @@ namespace Cw2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ponizej mozna podac sciezke, lub nacisnac enter z pusta linia, a wtedy wybrana zostanie domyslna (zapisuje domyslnie w folderze projektu)");
-            Console.WriteLine("Podaj adres pliku csv:");
-            String input = Console.ReadLine();
-            Console.WriteLine("Podaj adres ścieżki docelowej:(pamietaj o dobrym rozszerzeniu)");
-            String input2 = Console.ReadLine();
-            Console.WriteLine("Podaj format danych:");
-            String input3 = Console.ReadLine();
+            int argsLengthTmp = args.Length;
+            string input = "";
+            string input2 = "";
+            string input3 = "";
+            //Console.WriteLine(argsLengthTmp);
+            if (argsLengthTmp == 1)
+            {
+                input = args[0];
+            }
+            else if(argsLengthTmp == 2)
+            {
+                 input = args[0];
+                 input2 = args[1];
+            }
+            else if(argsLengthTmp == 3)
+            {
+                input = args[0];
+                input2 = args[1];
+                input3 = args[2];
+            }
 
             string projectDirectory = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName).FullName;
             //string path = @projectDirectory + "/DaneDoWczytania/dane.csv";
