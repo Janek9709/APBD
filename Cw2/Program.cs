@@ -117,7 +117,7 @@ namespace Cw2
                     }
                 }
             }
-            if (input == "xml")
+            if (input3 == "xml")
             {
                 //tu wywolanie calego xmla
                 XmlSerializerNamespaces ns = new XmlSerializerNamespaces();
