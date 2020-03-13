@@ -70,7 +70,7 @@ namespace Cw2
                 error.WriteLine(text);
                 try
                 {
-                    throw new ArgumentException("Bledna sciezka lub zle/brak podane rozszerzenie");
+                    throw new ArgumentException("Bledna sciezka lub zle/brak podane rozszerzenie, lub brak drugiego argumentu, przez co jest sciezka domyslna do xmla, a rozszerzenie json");
                 }
                 catch (ArgumentException ex)
                 {
