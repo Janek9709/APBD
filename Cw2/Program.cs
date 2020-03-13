@@ -14,7 +14,7 @@ namespace Cw2
             Console.WriteLine("Ponizej mozna podac sciezke, lub nacisnac enter z pusta linia, a wtedy wybrana zostanie domyslna (zapisuje domyslnie w folderze projektu)");
             Console.WriteLine("Podaj adres pliku csv:");
             String input = Console.ReadLine();
-            Console.WriteLine("Podaj adres ścieżki docelowej:");
+            Console.WriteLine("Podaj adres ścieżki docelowej:(pamietaj o dobrym rozszerzeniu)");
             String input2 = Console.ReadLine();
             Console.WriteLine("Podaj format danych:");
             String input3 = Console.ReadLine();
@@ -51,13 +51,13 @@ namespace Cw2
                     Environment.Exit(1);
                 }
             }
-            else if (!Path.HasExtension(path) || !Path.IsPathRooted(path))
+            else if (!Path.HasExtension(path) || !Path.IsPathRooted(path) || (input3 != "xml" && input3 != "json"))
             {
                 string text = "Wrong path";
                 error.WriteLine(text);
                 try
                 {
-                    throw new ArgumentException("Bledna sciezka");
+                    throw new ArgumentException("Bledna sciezka lub zle podane rozszerzenie");
                 }
                 catch (ArgumentException ex)
                 {
@@ -202,6 +202,7 @@ namespace Cw2
                 if (input2.Contains("xml"))
                 {
                     input2 = @projectDirectory + "/result.json";
+                    Console.WriteLine("Plik json zapisano w domyslnej lokalizacji "+ @projectDirectory + "/result.json");
                 }
                 //tu poczatek json
                 var uczelnia = new Uczelnia
@@ -211,6 +212,7 @@ namespace Cw2
                 string output = JsonConvert.SerializeObject(uczelnia, Formatting.Indented);
                 //Console.WriteLine(output);
                 File.WriteAllText(input2, output);
+                
                 //tu koniec json
             }
         }
