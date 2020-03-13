@@ -1,7 +1,7 @@
 <?xml version="1.0"?>
 <uczelnia createdAt="13.03.2020" author="Jan Biniek">
   <studenci>
-    <student indexNumber="s459">
+    <student indexNumber="459">
       <fname>Paweł</fname>
       <lname>Nowak1</lname>
       <birthdate>12.02.2000</birthdate>
@@ -13,7 +13,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4816">
+    <student indexNumber="4816">
       <fname>Kaja</fname>
       <lname>Jankowski29</lname>
       <birthdate>12.02.2000</birthdate>
@@ -25,7 +25,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4749">
+    <student indexNumber="4749">
       <fname>Justyna</fname>
       <lname>Kowalski30</lname>
       <birthdate>12.02.2000</birthdate>
@@ -37,7 +37,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4432">
+    <student indexNumber="4432">
       <fname>Michał</fname>
       <lname>Nowak31</lname>
       <birthdate>12.02.2000</birthdate>
@@ -49,7 +49,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4757">
+    <student indexNumber="4757">
       <fname>Kamil</fname>
       <lname>Brzęczyszczykiewicz32</lname>
       <birthdate>12.02.2000</birthdate>
@@ -61,7 +61,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4655">
+    <student indexNumber="4655">
       <fname>Marta</fname>
       <lname>Maciejewski33</lname>
       <birthdate>12.02.2000</birthdate>
@@ -73,7 +73,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4398">
+    <student indexNumber="4398">
       <fname>Szymon</fname>
       <lname>Jankowski34</lname>
       <birthdate>12.02.2000</birthdate>
@@ -85,7 +85,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4799">
+    <student indexNumber="4799">
       <fname>Joanna</fname>
       <lname>Brzęczyszczykiewicz37</lname>
       <birthdate>12.02.2000</birthdate>
@@ -97,7 +97,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4626">
+    <student indexNumber="4626">
       <fname>Irena</fname>
       <lname>Maciejewski38</lname>
       <birthdate>12.02.2000</birthdate>
@@ -109,7 +109,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4446">
+    <student indexNumber="4446">
       <fname>Adam</fname>
       <lname>Jankowski39</lname>
       <birthdate>12.02.2000</birthdate>
@@ -121,7 +121,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4396">
+    <student indexNumber="4396">
       <fname>Kacper</fname>
       <lname>Kowalski40</lname>
       <birthdate>12.02.2000</birthdate>
@@ -133,7 +133,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4902">
+    <student indexNumber="4902">
       <fname>Paweł</fname>
       <lname>Nowak41</lname>
       <birthdate>12.02.2000</birthdate>
@@ -145,7 +145,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4434">
+    <student indexNumber="4434">
       <fname>Aleksandra</fname>
       <lname>Brzęczyszczykiewicz42</lname>
       <birthdate>12.02.2000</birthdate>
@@ -157,7 +157,7 @@
         <mode>Zaoczne</mode>
       </studies>
     </student>
-    <student indexNumber="s4517">
+    <student indexNumber="4517">
       <fname>Katarzyna</fname>
       <lname>Maciejewski43</lname>
       <birthdate>12.02.2000</birthdate>
@@ -169,7 +169,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4705">
+    <student indexNumber="4705">
       <fname>Grzegorz</fname>
       <lname>Jankowski44</lname>
       <birthdate>12.02.2000</birthdate>
@@ -181,7 +181,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4661">
+    <student indexNumber="4661">
       <fname>Adrian</fname>
       <lname>Kowalski45</lname>
       <birthdate>12.02.2000</birthdate>
@@ -193,7 +193,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4842">
+    <student indexNumber="4842">
       <fname>Jan</fname>
       <lname>Nowak46</lname>
       <birthdate>12.02.2000</birthdate>
@@ -205,7 +205,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4709">
+    <student indexNumber="4709">
       <fname>Jakub</fname>
       <lname>Brzęczyszczykiewicz47</lname>
       <birthdate>12.02.2000</birthdate>
@@ -217,7 +217,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4792">
+    <student indexNumber="4792">
       <fname>Iga</fname>
       <lname>Maciejewski48</lname>
       <birthdate>12.02.2000</birthdate>
@@ -229,7 +229,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4789">
+    <student indexNumber="4789">
       <fname>Jakub</fname>
       <lname>Jankowski49</lname>
       <birthdate>12.02.2000</birthdate>
@@ -241,7 +241,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4708">
+    <student indexNumber="4708">
       <fname>Maria</fname>
       <lname>Kowalski50</lname>
       <birthdate>12.02.2000</birthdate>
@@ -253,7 +253,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4404">
+    <student indexNumber="4404">
       <fname>Artur</fname>
       <lname>Nowak51</lname>
       <birthdate>12.02.2000</birthdate>
@@ -265,7 +265,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4513">
+    <student indexNumber="4513">
       <fname>Sabina</fname>
       <lname>Brzęczyszczykiewicz52</lname>
       <birthdate>12.02.2000</birthdate>
@@ -277,7 +277,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4442">
+    <student indexNumber="4442">
       <fname>Łukasz</fname>
       <lname>Maciejewski53</lname>
       <birthdate>12.02.2000</birthdate>
@@ -289,7 +289,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4732">
+    <student indexNumber="4732">
       <fname>Marcin</fname>
       <lname>Jankowski54</lname>
       <birthdate>12.02.2000</birthdate>
@@ -301,7 +301,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4506">
+    <student indexNumber="4506">
       <fname>Rafał</fname>
       <lname>Kowalski55</lname>
       <birthdate>12.02.2000</birthdate>
@@ -313,7 +313,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4649">
+    <student indexNumber="4649">
       <fname>Jan</fname>
       <lname>Nowak56</lname>
       <birthdate>12.02.2000</birthdate>
@@ -325,7 +325,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4755">
+    <student indexNumber="4755">
       <fname>Jakub</fname>
       <lname>Brzęczyszczykiewicz57</lname>
       <birthdate>12.02.2000</birthdate>
@@ -337,7 +337,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4890">
+    <student indexNumber="4890">
       <fname>Julia</fname>
       <lname>Maciejewski58</lname>
       <birthdate>12.02.2000</birthdate>
@@ -349,7 +349,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4594">
+    <student indexNumber="4594">
       <fname>Karol</fname>
       <lname>Jankowski59</lname>
       <birthdate>12.02.2000</birthdate>
@@ -361,7 +361,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4925">
+    <student indexNumber="4925">
       <fname>Katarzyna</fname>
       <lname>Nowak61</lname>
       <birthdate>12.02.2000</birthdate>
@@ -373,7 +373,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4748">
+    <student indexNumber="4748">
       <fname>Marzena</fname>
       <lname>Brzęczyszczykiewicz62</lname>
       <birthdate>12.02.2000</birthdate>
@@ -385,7 +385,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4720">
+    <student indexNumber="4720">
       <fname>Filip</fname>
       <lname>Maciejewski63</lname>
       <birthdate>12.02.2000</birthdate>
@@ -397,7 +397,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4423">
+    <student indexNumber="4423">
       <fname>Karolina</fname>
       <lname>Jankowski64</lname>
       <birthdate>12.02.2000</birthdate>
@@ -409,7 +409,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4299">
+    <student indexNumber="4299">
       <fname>Mateusz</fname>
       <lname>Kowalski65</lname>
       <birthdate>12.02.2000</birthdate>
@@ -421,7 +421,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4629">
+    <student indexNumber="4629">
       <fname>Magdalena</fname>
       <lname>Nowak66</lname>
       <birthdate>12.02.2000</birthdate>
@@ -433,7 +433,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4889">
+    <student indexNumber="4889">
       <fname>Igor</fname>
       <lname>Brzęczyszczykiewicz67</lname>
       <birthdate>12.02.2000</birthdate>
@@ -445,7 +445,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4831">
+    <student indexNumber="4831">
       <fname>Bogumiła</fname>
       <lname>Maciejewski68</lname>
       <birthdate>12.02.2000</birthdate>
@@ -457,7 +457,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4478">
+    <student indexNumber="4478">
       <fname>Paweł</fname>
       <lname>Jankowski69</lname>
       <birthdate>12.02.2000</birthdate>
@@ -469,7 +469,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4718">
+    <student indexNumber="4718">
       <fname>Marta</fname>
       <lname>Kowalski70</lname>
       <birthdate>12.02.2000</birthdate>
@@ -481,7 +481,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4741">
+    <student indexNumber="4741">
       <fname>Kamil</fname>
       <lname>Nowak71</lname>
       <birthdate>12.02.2000</birthdate>
@@ -493,7 +493,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4444">
+    <student indexNumber="4444">
       <fname>Beata</fname>
       <lname>Brzęczyszczykiewicz72</lname>
       <birthdate>12.02.2000</birthdate>
@@ -505,7 +505,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4552">
+    <student indexNumber="4552">
       <fname>Kacper</fname>
       <lname>Maciejewski73</lname>
       <birthdate>12.02.2000</birthdate>
@@ -517,7 +517,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4462">
+    <student indexNumber="4462">
       <fname>Gustaw</fname>
       <lname>Jankowski74</lname>
       <birthdate>12.02.2000</birthdate>
@@ -529,7 +529,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4414">
+    <student indexNumber="4414">
       <fname>Arkadiusz</fname>
       <lname>Kowalski75</lname>
       <birthdate>12.02.2000</birthdate>
@@ -541,7 +541,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4508">
+    <student indexNumber="4508">
       <fname>Sonia</fname>
       <lname>Nowak76</lname>
       <birthdate>12.02.2000</birthdate>
@@ -553,7 +553,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4800">
+    <student indexNumber="4800">
       <fname>Sandra</fname>
       <lname>Brzęczyszczykiewicz77</lname>
       <birthdate>12.02.2000</birthdate>
@@ -565,7 +565,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4429">
+    <student indexNumber="4429">
       <fname>Małgorzata</fname>
       <lname>Maciejewski78</lname>
       <birthdate>12.02.2000</birthdate>
@@ -577,7 +577,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4927">
+    <student indexNumber="4927">
       <fname>Kiyomi</fname>
       <lname>Jankowski79</lname>
       <birthdate>12.02.2000</birthdate>
@@ -589,7 +589,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4502">
+    <student indexNumber="4502">
       <fname>Konrad</fname>
       <lname>Kowalski80</lname>
       <birthdate>12.02.2000</birthdate>
@@ -601,7 +601,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4744">
+    <student indexNumber="4744">
       <fname>Tomasz</fname>
       <lname>Nowak81</lname>
       <birthdate>12.02.2000</birthdate>
@@ -613,7 +613,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4477">
+    <student indexNumber="4477">
       <fname>Maciej</fname>
       <lname>Brzęczyszczykiewicz82</lname>
       <birthdate>12.02.2000</birthdate>
@@ -625,7 +625,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4736">
+    <student indexNumber="4736">
       <fname>Katarzyna</fname>
       <lname>Maciejewski83</lname>
       <birthdate>12.02.2000</birthdate>
@@ -637,7 +637,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4849">
+    <student indexNumber="4849">
       <fname>Klaudia</fname>
       <lname>Jankowski84</lname>
       <birthdate>12.02.2000</birthdate>
@@ -649,7 +649,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4819">
+    <student indexNumber="4819">
       <fname>Michał</fname>
       <lname>Kowalski85</lname>
       <birthdate>12.02.2000</birthdate>
@@ -661,7 +661,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4445">
+    <student indexNumber="4445">
       <fname>Sebastian</fname>
       <lname>Nowak86</lname>
       <birthdate>12.02.2000</birthdate>
@@ -673,7 +673,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4707">
+    <student indexNumber="4707">
       <fname>Kamil</fname>
       <lname>Brzęczyszczykiewicz87</lname>
       <birthdate>12.02.2000</birthdate>
@@ -685,7 +685,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4764">
+    <student indexNumber="4764">
       <fname>Jagna</fname>
       <lname>Maciejewski88</lname>
       <birthdate>12.02.2000</birthdate>
@@ -697,7 +697,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4722">
+    <student indexNumber="4722">
       <fname>Izabela</fname>
       <lname>Jankowski89</lname>
       <birthdate>12.02.2000</birthdate>
@@ -709,7 +709,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4452">
+    <student indexNumber="4452">
       <fname>Mateusz</fname>
       <lname>Kowalski90</lname>
       <birthdate>12.02.2000</birthdate>
@@ -721,7 +721,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4545">
+    <student indexNumber="4545">
       <fname>Daria</fname>
       <lname>Nowak91</lname>
       <birthdate>12.02.2000</birthdate>
@@ -733,7 +733,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4771">
+    <student indexNumber="4771">
       <fname>Agnieszka</fname>
       <lname>Brzęczyszczykiewicz92</lname>
       <birthdate>12.02.2000</birthdate>
@@ -745,7 +745,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4706">
+    <student indexNumber="4706">
       <fname>Iwona</fname>
       <lname>Maciejewski93</lname>
       <birthdate>12.02.2000</birthdate>
@@ -757,7 +757,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4772">
+    <student indexNumber="4772">
       <fname>Aleksandra</fname>
       <lname>Jankowski94</lname>
       <birthdate>12.02.2000</birthdate>
@@ -769,7 +769,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s3374">
+    <student indexNumber="3374">
       <fname>Tomasz</fname>
       <lname>Kowalski95</lname>
       <birthdate>12.02.2000</birthdate>
@@ -781,7 +781,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4756">
+    <student indexNumber="4756">
       <fname>Jolanta</fname>
       <lname>Nowak96</lname>
       <birthdate>12.02.2000</birthdate>
@@ -793,7 +793,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4457">
+    <student indexNumber="4457">
       <fname>Aleksandra</fname>
       <lname>Brzęczyszczykiewicz97</lname>
       <birthdate>12.02.2000</birthdate>
@@ -805,7 +805,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4412">
+    <student indexNumber="4412">
       <fname>Paweł</fname>
       <lname>Brzęczyszczykiewicz252</lname>
       <birthdate>12.02.2000</birthdate>
@@ -817,7 +817,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4525">
+    <student indexNumber="4525">
       <fname>Dariusz</fname>
       <lname>Maciejewski253</lname>
       <birthdate>12.02.2000</birthdate>
@@ -829,7 +829,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4836">
+    <student indexNumber="4836">
       <fname>Kamil</fname>
       <lname>Jankowski254</lname>
       <birthdate>12.02.2000</birthdate>
@@ -841,7 +841,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4788">
+    <student indexNumber="4788">
       <fname>Łukasz</fname>
       <lname>Kowalski255</lname>
       <birthdate>12.02.2000</birthdate>
@@ -853,7 +853,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4474">
+    <student indexNumber="4474">
       <fname>Tomasz</fname>
       <lname>Nowak256</lname>
       <birthdate>12.02.2000</birthdate>
@@ -865,7 +865,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4454">
+    <student indexNumber="4454">
       <fname>Michał</fname>
       <lname>Brzęczyszczykiewicz257</lname>
       <birthdate>12.02.2000</birthdate>
@@ -877,7 +877,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4443">
+    <student indexNumber="4443">
       <fname>Patryk</fname>
       <lname>Maciejewski258</lname>
       <birthdate>12.02.2000</birthdate>
@@ -889,7 +889,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4851">
+    <student indexNumber="4851">
       <fname>Bhagirath</fname>
       <lname>Jankowski259</lname>
       <birthdate>12.02.2000</birthdate>
@@ -901,7 +901,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4579">
+    <student indexNumber="4579">
       <fname>Michał</fname>
       <lname>Kowalski260</lname>
       <birthdate>12.02.2000</birthdate>
@@ -913,7 +913,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4461">
+    <student indexNumber="4461">
       <fname>Marek</fname>
       <lname>Nowak261</lname>
       <birthdate>12.02.2000</birthdate>
@@ -925,7 +925,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4747">
+    <student indexNumber="4747">
       <fname>Przemysław</fname>
       <lname>Brzęczyszczykiewicz262</lname>
       <birthdate>12.02.2000</birthdate>
@@ -937,7 +937,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4762">
+    <student indexNumber="4762">
       <fname>Marcin</fname>
       <lname>Maciejewski263</lname>
       <birthdate>12.02.2000</birthdate>
@@ -949,7 +949,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4413">
+    <student indexNumber="4413">
       <fname>Zuzanna</fname>
       <lname>Jankowski264</lname>
       <birthdate>12.02.2000</birthdate>
@@ -961,7 +961,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4490">
+    <student indexNumber="4490">
       <fname>Michał</fname>
       <lname>Kowalski265</lname>
       <birthdate>12.02.2000</birthdate>
@@ -973,7 +973,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4554">
+    <student indexNumber="4554">
       <fname>Wojciech</fname>
       <lname>Nowak266</lname>
       <birthdate>12.02.2000</birthdate>
@@ -985,7 +985,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4340">
+    <student indexNumber="4340">
       <fname>Enkh-Amgalan</fname>
       <lname>Brzęczyszczykiewicz267</lname>
       <birthdate>12.02.2000</birthdate>
@@ -997,7 +997,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4586">
+    <student indexNumber="4586">
       <fname>Adrian</fname>
       <lname>Maciejewski268</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1009,7 +1009,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4798">
+    <student indexNumber="4798">
       <fname>Bartosz</fname>
       <lname>Jankowski269</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1021,7 +1021,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4711">
+    <student indexNumber="4711">
       <fname>Jakub</fname>
       <lname>Kowalski270</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1033,7 +1033,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4056">
+    <student indexNumber="4056">
       <fname>Sebastian</fname>
       <lname>Nowak271</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1045,7 +1045,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4549">
+    <student indexNumber="4549">
       <fname>Aleksandra</fname>
       <lname>Brzęczyszczykiewicz272</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1057,7 +1057,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4618">
+    <student indexNumber="4618">
       <fname>Piotr</fname>
       <lname>Maciejewski273</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1069,7 +1069,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4530">
+    <student indexNumber="4530">
       <fname>Adrian</fname>
       <lname>Jankowski274</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1081,7 +1081,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4607">
+    <student indexNumber="4607">
       <fname>Andrzej</fname>
       <lname>Kowalski275</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1093,7 +1093,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4459">
+    <student indexNumber="4459">
       <fname>Wojciech</fname>
       <lname>Nowak276</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1105,7 +1105,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4501">
+    <student indexNumber="4501">
       <fname>Monika</fname>
       <lname>Brzęczyszczykiewicz277</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1117,7 +1117,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4858">
+    <student indexNumber="4858">
       <fname>Jan</fname>
       <lname>Maciejewski278</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1129,7 +1129,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4578">
+    <student indexNumber="4578">
       <fname>Paweł</fname>
       <lname>Jankowski279</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1141,7 +1141,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4555">
+    <student indexNumber="4555">
       <fname>Bartosz</fname>
       <lname>Kowalski280</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1153,7 +1153,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4589">
+    <student indexNumber="4589">
       <fname>Agata</fname>
       <lname>Nowak281</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1165,7 +1165,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4945">
+    <student indexNumber="4945">
       <fname>Matthew</fname>
       <lname>Brzęczyszczykiewicz282</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1177,7 +1177,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4556">
+    <student indexNumber="4556">
       <fname>Piotr</fname>
       <lname>Maciejewski283</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1189,7 +1189,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4504">
+    <student indexNumber="4504">
       <fname>Grzegorz</fname>
       <lname>Jankowski284</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1201,7 +1201,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4505">
+    <student indexNumber="4505">
       <fname>Sebastian</fname>
       <lname>Kowalski285</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1213,7 +1213,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4105">
+    <student indexNumber="4105">
       <fname>Filip</fname>
       <lname>Nowak286</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1225,7 +1225,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4487">
+    <student indexNumber="4487">
       <fname>Jakub</fname>
       <lname>Brzęczyszczykiewicz287</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1237,7 +1237,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4498">
+    <student indexNumber="4498">
       <fname>Artur</fname>
       <lname>Maciejewski288</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1249,7 +1249,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4471">
+    <student indexNumber="4471">
       <fname>Piotr</fname>
       <lname>Jankowski289</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1261,7 +1261,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4855">
+    <student indexNumber="4855">
       <fname>Małgorzata</fname>
       <lname>Kowalski290</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1273,7 +1273,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4752">
+    <student indexNumber="4752">
       <fname>Arkadiusz</fname>
       <lname>Nowak291</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1285,7 +1285,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4770">
+    <student indexNumber="4770">
       <fname>Jakub</fname>
       <lname>Brzęczyszczykiewicz292</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1297,7 +1297,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4476">
+    <student indexNumber="4476">
       <fname>Adam</fname>
       <lname>Maciejewski293</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1309,7 +1309,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4724">
+    <student indexNumber="4724">
       <fname>Tomasz</fname>
       <lname>Jankowski294</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1321,7 +1321,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4754">
+    <student indexNumber="4754">
       <fname>Piotr</fname>
       <lname>Kowalski295</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1333,7 +1333,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4769">
+    <student indexNumber="4769">
       <fname>Michał</fname>
       <lname>Nowak296</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1345,7 +1345,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4499">
+    <student indexNumber="4499">
       <fname>Maciej</fname>
       <lname>Brzęczyszczykiewicz297</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1357,7 +1357,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4733">
+    <student indexNumber="4733">
       <fname>Jakub</fname>
       <lname>Maciejewski298</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1369,7 +1369,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4584">
+    <student indexNumber="4584">
       <fname>Kasper</fname>
       <lname>Jankowski299</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1381,7 +1381,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4514">
+    <student indexNumber="4514">
       <fname>Krzysztof</fname>
       <lname>Kowalski300</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1393,7 +1393,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4448">
+    <student indexNumber="4448">
       <fname>Michał</fname>
       <lname>Nowak301</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1405,7 +1405,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4664">
+    <student indexNumber="4664">
       <fname>Paweł</fname>
       <lname>Brzęczyszczykiewicz302</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1417,7 +1417,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4935">
+    <student indexNumber="4935">
       <fname>Katarzyna</fname>
       <lname>Maciejewski303</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1429,7 +1429,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4485">
+    <student indexNumber="4485">
       <fname>Konrad</fname>
       <lname>Jankowski304</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1441,7 +1441,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4456">
+    <student indexNumber="4456">
       <fname>Piotr</fname>
       <lname>Kowalski305</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1453,7 +1453,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4107">
+    <student indexNumber="4107">
       <fname>Jan</fname>
       <lname>Nowak306</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1465,7 +1465,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4482">
+    <student indexNumber="4482">
       <fname>Radosław</fname>
       <lname>Brzęczyszczykiewicz307</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1477,7 +1477,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4817">
+    <student indexNumber="4817">
       <fname>Kacper</fname>
       <lname>Maciejewski308</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1489,7 +1489,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4765">
+    <student indexNumber="4765">
       <fname>Tomasz</fname>
       <lname>Jankowski309</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1501,7 +1501,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4387">
+    <student indexNumber="4387">
       <fname>Lech</fname>
       <lname>Kowalski310</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1513,7 +1513,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4509">
+    <student indexNumber="4509">
       <fname>Błażej</fname>
       <lname>Nowak311</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1525,7 +1525,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4609">
+    <student indexNumber="4609">
       <fname>Karol</fname>
       <lname>Brzęczyszczykiewicz312</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1537,7 +1537,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4481">
+    <student indexNumber="4481">
       <fname>Paweł</fname>
       <lname>Maciejewski313</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1549,7 +1549,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4512">
+    <student indexNumber="4512">
       <fname>Wojciech</fname>
       <lname>Jankowski314</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1561,7 +1561,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4782">
+    <student indexNumber="4782">
       <fname>Maciej</fname>
       <lname>Kowalski315</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1573,7 +1573,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4492">
+    <student indexNumber="4492">
       <fname>Michał</fname>
       <lname>Nowak316</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1585,7 +1585,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4531">
+    <student indexNumber="4531">
       <fname>Piotr</fname>
       <lname>Brzęczyszczykiewicz317</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1597,7 +1597,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4406">
+    <student indexNumber="4406">
       <fname>Marcin</fname>
       <lname>Maciejewski318</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1609,7 +1609,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4394">
+    <student indexNumber="4394">
       <fname>Krzysztof</fname>
       <lname>Jankowski319</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1621,7 +1621,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4627">
+    <student indexNumber="4627">
       <fname>Michał</fname>
       <lname>Kowalski320</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1633,7 +1633,7 @@
         <mode>Internetowe</mode>
       </studies>
     </student>
-    <student indexNumber="s4830">
+    <student indexNumber="4830">
       <fname>Krzysztof</fname>
       <lname>Nowak321</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1645,7 +1645,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4486">
+    <student indexNumber="4486">
       <fname>Adrian</fname>
       <lname>Brzęczyszczykiewicz322</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1657,7 +1657,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4447">
+    <student indexNumber="4447">
       <fname>Mariusz</fname>
       <lname>Maciejewski323</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1669,7 +1669,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4580">
+    <student indexNumber="4580">
       <fname>Bartosz</fname>
       <lname>Jankowski324</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1681,7 +1681,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4284">
+    <student indexNumber="4284">
       <fname>Piotr</fname>
       <lname>Kowalski325</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1693,7 +1693,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4440">
+    <student indexNumber="4440">
       <fname>Michał</fname>
       <lname>Nowak326</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1705,7 +1705,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4410">
+    <student indexNumber="4410">
       <fname>Aleksander</fname>
       <lname>Brzęczyszczykiewicz327</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1717,7 +1717,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4615">
+    <student indexNumber="4615">
       <fname>Andrzej</fname>
       <lname>Maciejewski328</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1729,7 +1729,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4796">
+    <student indexNumber="4796">
       <fname>Paweł</fname>
       <lname>Jankowski329</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1741,7 +1741,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4458">
+    <student indexNumber="4458">
       <fname>Paweł</fname>
       <lname>Kowalski330</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1753,7 +1753,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4942">
+    <student indexNumber="4942">
       <fname>Nakul</fname>
       <lname>Brzęczyszczykiewicz332</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1765,7 +1765,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4614">
+    <student indexNumber="4614">
       <fname>Tomoto</fname>
       <lname>Maciejewski333</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1777,7 +1777,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4822">
+    <student indexNumber="4822">
       <fname>Krzysztof</fname>
       <lname>Jankowski334</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1789,7 +1789,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4433">
+    <student indexNumber="4433">
       <fname>Adam</fname>
       <lname>Kowalski335</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1801,7 +1801,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4557">
+    <student indexNumber="4557">
       <fname>Jan</fname>
       <lname>Nowak336</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1813,7 +1813,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4599">
+    <student indexNumber="4599">
       <fname>Gabriel</fname>
       <lname>Brzęczyszczykiewicz337</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1825,7 +1825,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4419">
+    <student indexNumber="4419">
       <fname>Michał</fname>
       <lname>Maciejewski338</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1837,7 +1837,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4828">
+    <student indexNumber="4828">
       <fname>Michał</fname>
       <lname>Jankowski339</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1849,7 +1849,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4460">
+    <student indexNumber="4460">
       <fname>Kacper</fname>
       <lname>Kowalski340</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1861,7 +1861,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4058">
+    <student indexNumber="4058">
       <fname>Adrian</fname>
       <lname>Nowak341</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1873,7 +1873,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4524">
+    <student indexNumber="4524">
       <fname>Michał</fname>
       <lname>Brzęczyszczykiewicz342</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1885,7 +1885,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4588">
+    <student indexNumber="4588">
       <fname>Katarzyna</fname>
       <lname>Maciejewski343</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1897,7 +1897,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4743">
+    <student indexNumber="4743">
       <fname>Piotr</fname>
       <lname>Jankowski344</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1909,7 +1909,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4721">
+    <student indexNumber="4721">
       <fname>Karol</fname>
       <lname>Kowalski345</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1921,7 +1921,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4544">
+    <student indexNumber="4544">
       <fname>Radosław</fname>
       <lname>Nowak346</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1933,7 +1933,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4426">
+    <student indexNumber="4426">
       <fname>Marco</fname>
       <lname>Brzęczyszczykiewicz347</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1945,7 +1945,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4532">
+    <student indexNumber="4532">
       <fname>Jagoda</fname>
       <lname>Maciejewski348</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1957,7 +1957,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4480">
+    <student indexNumber="4480">
       <fname>Tomasz</fname>
       <lname>Jankowski349</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1969,7 +1969,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4441">
+    <student indexNumber="4441">
       <fname>Przemysław</fname>
       <lname>Kowalski350</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1981,7 +1981,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4523">
+    <student indexNumber="4523">
       <fname>Michał</fname>
       <lname>Nowak351</lname>
       <birthdate>12.02.2000</birthdate>
@@ -1993,7 +1993,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4766">
+    <student indexNumber="4766">
       <fname>Bartosz</fname>
       <lname>Brzęczyszczykiewicz352</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2005,7 +2005,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4941">
+    <student indexNumber="4941">
       <fname>Achut</fname>
       <lname>Maciejewski353</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2017,7 +2017,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4647">
+    <student indexNumber="4647">
       <fname>Aleksander</fname>
       <lname>Jankowski354</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2029,7 +2029,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4500">
+    <student indexNumber="4500">
       <fname>Jan</fname>
       <lname>Kowalski355</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2041,7 +2041,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4422">
+    <student indexNumber="4422">
       <fname>Yuriy</fname>
       <lname>Nowak356</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2053,7 +2053,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4660">
+    <student indexNumber="4660">
       <fname>Michał</fname>
       <lname>Brzęczyszczykiewicz357</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2065,7 +2065,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4521">
+    <student indexNumber="4521">
       <fname>Michał</fname>
       <lname>Maciejewski358</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2077,7 +2077,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4585">
+    <student indexNumber="4585">
       <fname>Piotr</fname>
       <lname>Jankowski359</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2089,7 +2089,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s3081">
+    <student indexNumber="3081">
       <fname>Mikołaj</fname>
       <lname>Kowalski360</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2101,7 +2101,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4710">
+    <student indexNumber="4710">
       <fname>Dariusz</fname>
       <lname>Nowak361</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2113,7 +2113,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4385">
+    <student indexNumber="4385">
       <fname>Anna</fname>
       <lname>Brzęczyszczykiewicz362</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2125,7 +2125,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4529">
+    <student indexNumber="4529">
       <fname>Piotr</fname>
       <lname>Maciejewski363</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2137,7 +2137,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4522">
+    <student indexNumber="4522">
       <fname>Michał</fname>
       <lname>Jankowski364</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2149,7 +2149,7 @@
         <mode>Zaoczne</mode>
       </studies>
     </student>
-    <student indexNumber="s4827">
+    <student indexNumber="4827">
       <fname>Dawid</fname>
       <lname>Kowalski365</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2161,7 +2161,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4518">
+    <student indexNumber="4518">
       <fname>Karol</fname>
       <lname>Nowak366</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2173,7 +2173,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4384">
+    <student indexNumber="4384">
       <fname>Adrian</fname>
       <lname>Brzęczyszczykiewicz367</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2185,7 +2185,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4496">
+    <student indexNumber="4496">
       <fname>Łukasz</fname>
       <lname>Maciejewski368</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2197,7 +2197,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4750">
+    <student indexNumber="4750">
       <fname>Adam</fname>
       <lname>Jankowski369</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2209,7 +2209,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4111">
+    <student indexNumber="4111">
       <fname>Arkadiusz</fname>
       <lname>Kowalski370</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2221,7 +2221,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4484">
+    <student indexNumber="4484">
       <fname>Jakub</fname>
       <lname>Nowak371</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2233,7 +2233,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4483">
+    <student indexNumber="4483">
       <fname>Michał</fname>
       <lname>Brzęczyszczykiewicz372</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2245,7 +2245,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4751">
+    <student indexNumber="4751">
       <fname>Tomasz</fname>
       <lname>Maciejewski373</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2257,7 +2257,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4528">
+    <student indexNumber="4528">
       <fname>Radosław</fname>
       <lname>Jankowski374</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2269,7 +2269,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4533">
+    <student indexNumber="4533">
       <fname>Paweł</fname>
       <lname>Kowalski375</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2281,7 +2281,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4814">
+    <student indexNumber="4814">
       <fname>Przemysław</fname>
       <lname>Nowak376</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2293,7 +2293,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4753">
+    <student indexNumber="4753">
       <fname>Adam</fname>
       <lname>Brzęczyszczykiewicz377</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2305,7 +2305,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4520">
+    <student indexNumber="4520">
       <fname>Dawid</fname>
       <lname>Maciejewski378</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2317,7 +2317,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4837">
+    <student indexNumber="4837">
       <fname>Adrian</fname>
       <lname>Jankowski379</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2329,7 +2329,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4611">
+    <student indexNumber="4611">
       <fname>Sławomir</fname>
       <lname>Kowalski380</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2341,7 +2341,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4616">
+    <student indexNumber="4616">
       <fname>Rafał</fname>
       <lname>Nowak381</lname>
       <birthdate>12.02.2000</birthdate>
@@ -2353,7 +2353,7 @@
         <mode>Dzienne</mode>
       </studies>
     </student>
-    <student indexNumber="s4603">
+    <student indexNumber="4603">
       <fname>Agnieszka</fname>
       <lname>Brzęczyszczykiewicz382</lname>
       <birthdate>12.02.2000</birthdate>

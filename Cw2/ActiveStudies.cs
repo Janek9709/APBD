@@ -1,4 +1,5 @@
-﻿using System.Xml.Serialization;
+﻿using Newtonsoft.Json;
+using System.Xml.Serialization;
 
 namespace Cw2
 {
