@@ -2,7 +2,6 @@
 using System;
 using System.Collections.Generic;
 using System.IO;
-using System.Text.Json;
 using System.Xml.Serialization;
 
 namespace Cw2
@@ -32,12 +31,12 @@ namespace Cw2
                 input3 = args[2];
             }
 
-            string projectDirectory = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName).FullName;
+            //string projectDirectory = Directory.GetParent(Directory.GetParent(Environment.CurrentDirectory).Parent.FullName).FullName;
             //string path = @projectDirectory + "/DaneDoWczytania/dane.csv";
-
-            input = input.Length == 0 ? @projectDirectory + "/DaneDoWczytania/dane.csv" : input;
-
-            input2 = input2.Length == 0 ? @projectDirectory + "/result.xml" : input2;
+            //input = input.Length == 0 ? @projectDirectory + "/DaneDoWczytania/dane.csv" : input;
+            input = input.Length == 0 ? "data.csv" : input;
+            //input2 = input2.Length == 0 ? @projectDirectory + "/result.xml" : input2;
+            input2 = input2.Length == 0 ? "result.xml" : input2;
 
             input3 = input3.Length == 0 ? "xml" : input3;
 
@@ -46,9 +45,9 @@ namespace Cw2
             string path = input;
 
             var hashSet = new HashSet<Student>(new OwnComparator());
-
-            System.IO.StreamWriter error = new System.IO.StreamWriter(@projectDirectory + "/log.txt", false);
-
+            //System.IO.StreamWriter error = new System.IO.StreamWriter(@projectDirectory + "/log.txt", false);
+            System.IO.StreamWriter error = new System.IO.StreamWriter("log.txt", false);
+            
             if (!File.Exists(path))
             {
                 string text = "File not found";
@@ -64,13 +63,14 @@ namespace Cw2
                     Environment.Exit(1);
                 }
             }
-            else if (!Path.HasExtension(path) || !Path.IsPathRooted(path) || (input3 != "xml" && input3 != "json"))
+            //!Path.IsPathRooted(path) ||
+            else if (!Path.HasExtension(path) || (input3 != "xml" && input3 != "json") || !input2.Contains(input3))
             {
                 string text = "Wrong path";
                 error.WriteLine(text);
                 try
                 {
-                    throw new ArgumentException("Bledna sciezka lub zle podane rozszerzenie");
+                    throw new ArgumentException("Bledna sciezka lub zle/brak podane rozszerzenie");
                 }
                 catch (ArgumentException ex)
                 {
@@ -78,7 +78,7 @@ namespace Cw2
                     Environment.Exit(1);
                 }
             }
-
+            
             using (var stream = new StreamReader(File.OpenRead(path)))
             {
                 string line = null;
@@ -212,11 +212,11 @@ namespace Cw2
             else if (input3 == "json")
             {
                 //input2 = @projectDirectory + "/dataJson.json";
-                if (input2.Contains("xml"))
-                {
-                    input2 = @projectDirectory + "/result.json";
-                    Console.WriteLine("Plik json zapisano w domyslnej lokalizacji "+ @projectDirectory + "/result.json");
-                }
+                //if (input2.Contains("xml"))
+                //{
+                //    input2 = "result.json";
+                //    Console.WriteLine("Plik json zapisano w domyslnej lokalizacji ");
+                //}
                 //tu poczatek json
                 var uczelnia = new Uczelnia
                 {
