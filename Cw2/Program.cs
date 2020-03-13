@@ -11,7 +11,7 @@ namespace Cw2
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Ponizej mozna podac sciezka, lub nacisnac enter z pusta linia, a wtedy wybrania zostanie domyslna");
+            Console.WriteLine("Ponizej mozna podac sciezke, lub nacisnac enter z pusta linia, a wtedy wybrana zostanie domyslna (zapisuje domyslnie w folderze projektu)");
             Console.WriteLine("Podaj adres pliku csv:");
             String input = Console.ReadLine();
             Console.WriteLine("Podaj adres ścieżki docelowej:");
@@ -38,7 +38,7 @@ namespace Cw2
 
             if (!File.Exists(path))
             {
-                string text = "File not found, wrong path";
+                string text = "File not found";
                 error.WriteLine(text);
                 try
                 {
@@ -53,6 +53,8 @@ namespace Cw2
             }
             else if (!Path.HasExtension(path) || !Path.IsPathRooted(path))
             {
+                string text = "Wrong path";
+                error.WriteLine(text);
                 try
                 {
                     throw new ArgumentException("Bledna sciezka");
@@ -83,7 +85,7 @@ namespace Cw2
 
                         foreach (var text in student)
                         {
-                            error.Write("Bledna linia: " + text);
+                            error.Write(text+" ");
                         }
                         error.WriteLine();
 
@@ -113,7 +115,7 @@ namespace Cw2
                         {
                             foreach (var text in student)
                             {
-                                error.Write("Bledna linia: "+text);
+                                error.Write(text+" ");
                             }
                             error.WriteLine();
                         }
