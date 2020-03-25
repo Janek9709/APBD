@@ -86,8 +86,8 @@ namespace Cw3.Controllers
                         listOfEnrollments.Add(new Enrollment
                         {
                             Semester = Convert.ToInt32(dr["SEMESTER"].ToString()),
-                            StartDate = Convert.ToDateTime(dr["STARTDATE"].ToString()),
-                            StudyName = dr["NAME"].ToString()
+                            StudyName = dr["NAME"].ToString(),
+                            StartDate = Convert.ToDateTime(dr["STARTDATE"].ToString())
                         });
                     }
                 }
