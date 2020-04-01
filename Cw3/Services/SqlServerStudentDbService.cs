@@ -160,7 +160,7 @@ namespace Cw3.Services
 
                     command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR2 GROUP BY IDSTUDY, SEMESTER, STARTDATE;";
                     command.Parameters.AddWithValue("studiesR2", request.Studies);
-                    command.Parameters.AddWithValue("semesterR2", request.Semester);
+                    command.Parameters.AddWithValue("semesterR2", request.Semester+1);
                     dr = command.ExecuteReader();
                     dr.Read();
 
