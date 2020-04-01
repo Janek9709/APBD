@@ -41,9 +41,14 @@ namespace Cw3.Services
                     if (!dr.Read())
                         return StatusCode(400);
 
-                    while (dr.Read())
-                        idOfStudies = (int)dr["IDSTUDY"];
+                    idOfStudies = (int) dr["IDSTUDY"];
 
+                    dr.Close();
+
+                    command.CommandText = "SELECT IDENROLLMENT FROM ENROLLMENT WHERE IDSTUDY = @idStudiesR22";
+                    command.Parameters.AddWithValue("idStudiesR22", idOfStudies);
+                    dr = command.ExecuteReader();
+                    bool check = dr.Read();
                     dr.Close();
 
                     //drugi punkt, szukanie najwiekszego z enrollment
@@ -51,16 +56,18 @@ namespace Cw3.Services
                     command.Parameters.AddWithValue("idStudiesR", idOfStudies);
                     dr = command.ExecuteReader();
 
-                    if (!dr.Read())
-                    {
+                    
+                    if (!check)
+                    { 
                         dr.Close();
-                        command.CommandText = "INSERT INTO ENROLLMENT VALUES((SELECT MAX(IDENROLLMENT)+1 FROM ENROLLMENT), 1, @idStudiesR, @dateT);";
-                        command.Parameters.AddWithValue("idStudiesR", idOfStudies);
+                        command.CommandText = "INSERT INTO ENROLLMENT VALUES((SELECT MAX(IDENROLLMENT)+1 FROM ENROLLMENT), 1, @idStudiesR44, @dateT);";
+                        command.Parameters.AddWithValue("idStudiesR44", idOfStudies);
                         command.Parameters.AddWithValue("dateT", DateTime.Today.ToShortDateString());
                         command.ExecuteNonQuery();
                     }
                     else
                     {
+                        //dr.Read();
                         when = (DateTime)dr["STARTDATE"];
                         maxIdOfEnrollment = (int)dr["MAX"];
                     }
@@ -68,8 +75,8 @@ namespace Cw3.Services
 
                     if (maxIdOfEnrollment == -1)
                     {
-                        command.CommandText = "SELECT MAX(IDENROLLMENT) AS MAX FROM ENROLLMENT WHERE SEMESTER = 1 AND IDSTUDY = @idStudiesR";
-                        command.Parameters.AddWithValue("idStudiesR", idOfStudies);
+                        command.CommandText = "SELECT MAX(IDENROLLMENT) AS MAX FROM ENROLLMENT WHERE SEMESTER = 1 AND IDSTUDY = @idStudiesR66";
+                        command.Parameters.AddWithValue("idStudiesR66", idOfStudies);
                         dr = command.ExecuteReader();
                         while (dr.Read())
                             maxIdOfEnrollment = (int)dr["MAX"];
@@ -77,8 +84,8 @@ namespace Cw3.Services
                         dr.Close();
                     }
 
-                    command.CommandText = "SELECT INDEXNUMBER FROM STUDENT WHERE INDEXNUMBER = @index";
-                    command.Parameters.AddWithValue("index", request.IndexNumber);
+                    command.CommandText = "SELECT INDEXNUMBER FROM STUDENT WHERE INDEXNUMBER = @index123";
+                    command.Parameters.AddWithValue("index123", request.IndexNumber);
                     dr = command.ExecuteReader();
 
                     if (dr.Read())
@@ -111,7 +118,7 @@ namespace Cw3.Services
                 catch (SqlException exception)
                 {
                     transaction.Rollback();
-                    return BadRequest("Exception");
+                   return BadRequest("Exception");
                 }
 
             }
@@ -144,17 +151,14 @@ namespace Cw3.Services
 
                     dr.Close();
 
-                    command.CommandType = System.Data.CommandType.StoredProcedure;
-                    command.CommandText = "PromoteStudent";
-                    command.Parameters.Add(new SqlParameter("@studiesR", request.Studies));
-                    command.Parameters.Add(new SqlParameter("@semesterR", request.Semester));
+                    command.CommandText = "EXEC PromoteStudent @STUDIES = @param1, @SEMESTER = @param2";
+                    command.Parameters.AddWithValue("param1", request.Studies);
+                    command.Parameters.AddWithValue("param2", request.Semester);
+                    command.ExecuteNonQuery();
 
-                    dr = command.ExecuteReader();
-                    dr.Read();
+                    
 
-                    dr.Close();
-
-                    command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR2 GROUP BY STARTDATE;";
+                    command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR2 GROUP BY IDSTUDY, SEMESTER, STARTDATE;";
                     command.Parameters.AddWithValue("studiesR2", request.Studies);
                     command.Parameters.AddWithValue("semesterR2", request.Semester);
                     dr = command.ExecuteReader();
@@ -176,7 +180,7 @@ namespace Cw3.Services
                 {
                     transaction2.Rollback();
                     return BadRequest("Exception");
-
+                
                 }
             }
         }
