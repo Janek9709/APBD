@@ -128,12 +128,12 @@ namespace Cw3.Services
             using (var command = new SqlCommand())
             {
                 connection.Open();
-                var transaction = connection.BeginTransaction("promoteStudent");
+                var transaction2 = connection.BeginTransaction("promoteStudent");
                 try
                 {
                     command.Connection = connection;
-                    command.Transaction = transaction;
-                    command.CommandText = "SELECT IDSTUDY, SEMESTER FROM ENROLLMENT WHERE IDSTUDY = @studiesR AND SEMESTER = @semesterR;";
+                    command.Transaction = transaction2;
+                    command.CommandText = "SELECT IDSTUDY FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR;";
                     command.Parameters.AddWithValue("studiesR", request.Studies);
                     command.Parameters.AddWithValue("semesterR", request.Semester);
 
@@ -150,12 +150,15 @@ namespace Cw3.Services
                     command.Parameters.Add(new SqlParameter("@semesterR", request.Semester));
 
                     dr = command.ExecuteReader();
+                    dr.Read();
 
                     dr.Close();
 
-                    command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = @studiesR2 AND SEMESTER = @semesterR2 GROUP BY STARTDATE;";
+                    command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR2 GROUP BY STARTDATE;";
                     command.Parameters.AddWithValue("studiesR2", request.Studies);
                     command.Parameters.AddWithValue("semesterR2", request.Semester);
+                    dr = command.ExecuteReader();
+                    dr.Read();
 
                     var returnRespone = new PromoteStudentResponse
                     {
@@ -163,14 +166,15 @@ namespace Cw3.Services
                         StudyName = (String) request.Studies,
                         StartDate = (DateTime)dr["STARTDATE"]
                     };
+                    dr.Close();
 
-                    transaction.Commit();
+                    transaction2.Commit();
                     return StatusCode(202, returnRespone);
 
                 }
                 catch (SqlException exception)
                 {
-                    transaction.Rollback();
+                    transaction2.Rollback();
                     return BadRequest("Exception");
 
                 }
