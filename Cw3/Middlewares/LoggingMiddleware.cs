@@ -33,7 +33,7 @@ namespace Cw3.Middlewares
 
                 string allCombined = $"1. Metoda: {metoda} 2. Sciezka: {sciezka}  3. Cialo: {bodyStr}  4. Query: {querystring} \n";
                 //logowanie do pliku
-                File.AppendAllText("log\\APBDlog.txt", allCombined);
+                File.AppendAllText("APBDlog.txt", allCombined);
                 
             }
 
