@@ -41,7 +41,7 @@ namespace Cw3.Services
                     if (!dr.Read())
                         return StatusCode(400);
 
-                    idOfStudies = (int) dr["IDSTUDY"];
+                    idOfStudies = (int)dr["IDSTUDY"];
 
                     dr.Close();
 
@@ -56,9 +56,9 @@ namespace Cw3.Services
                     command.Parameters.AddWithValue("idStudiesR", idOfStudies);
                     dr = command.ExecuteReader();
 
-                    
+
                     if (!check)
-                    { 
+                    {
                         dr.Close();
                         command.CommandText = "INSERT INTO ENROLLMENT VALUES((SELECT MAX(IDENROLLMENT)+1 FROM ENROLLMENT), 1, @idStudiesR44, @dateT);";
                         command.Parameters.AddWithValue("idStudiesR44", idOfStudies);
@@ -118,11 +118,49 @@ namespace Cw3.Services
                 catch (SqlException exception)
                 {
                     transaction.Rollback();
-                   return BadRequest("Exception");
+                    return BadRequest("Exception");
                 }
 
             }
 
+        }
+
+        public bool GetStudent(string id)
+        {
+            try
+            {
+                //List<Enrollment> listOfEnrollments = new List<Enrollment>();
+
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand())
+                {
+                    command.Connection = connection;
+                    command.CommandText = "SELECT FIRSTNAME, LASTNAME, BIRTHDATE FROM STUDENT WHERE STUDENT.INDEXNUMBER = @givenId;";
+                    command.Parameters.AddWithValue("givenId", id);
+
+                    connection.Open();
+                    var dr = command.ExecuteReader();
+                    if (!dr.Read())
+                        return false;
+
+                    /*
+                    var respone = new GetStudentResponse
+                    {
+                        FirstName = (string)dr["FirstName"],
+                        LastName = (string)dr["LastName"],
+                        BirthDate = (DateTime)dr["BrithDate"]
+                    };
+                    */
+
+                    //return Ok(respone);
+                    return true;
+                }
+            }
+            catch (SqlException exception)
+            {
+                //return BadRequest("Brak takiego studenta");
+                return false;
+            }
         }
 
         public IActionResult PromoteStudent(PromoteStudentRequest request)
@@ -156,18 +194,18 @@ namespace Cw3.Services
                     command.Parameters.AddWithValue("param2", request.Semester);
                     command.ExecuteNonQuery();
 
-                    
+
 
                     command.CommandText = "SELECT IDSTUDY, SEMESTER, STARTDATE FROM ENROLLMENT WHERE IDSTUDY = (SELECT IDSTUDY FROM STUDIES WHERE NAME = @studiesR) AND SEMESTER = @semesterR2 GROUP BY IDSTUDY, SEMESTER, STARTDATE;";
                     command.Parameters.AddWithValue("studiesR2", request.Studies);
-                    command.Parameters.AddWithValue("semesterR2", request.Semester+1);
+                    command.Parameters.AddWithValue("semesterR2", request.Semester + 1);
                     dr = command.ExecuteReader();
                     dr.Read();
 
                     var returnRespone = new PromoteStudentResponse
                     {
                         Semester = (int)dr["SEMESTER"],
-                        StudyName = (String) request.Studies,
+                        StudyName = (String)request.Studies,
                         StartDate = (DateTime)dr["STARTDATE"]
                     };
                     dr.Close();
@@ -180,7 +218,7 @@ namespace Cw3.Services
                 {
                     transaction2.Rollback();
                     return BadRequest("Exception");
-                
+
                 }
             }
         }

@@ -12,5 +12,7 @@ namespace Cw3.Services
         public IActionResult AddStudent(AddStudentRequest request);
 
         public IActionResult PromoteStudent(PromoteStudentRequest request);
+
+        public bool GetStudent(string id);
     }
 }

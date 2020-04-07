@@ -5,6 +5,7 @@ using System.Linq;
 using System.Threading.Tasks;
 using Cw3.DAL;
 using Cw3.Models;
+using Cw3.Services;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Cw3.Controllers
@@ -14,10 +15,12 @@ namespace Cw3.Controllers
     public class StudentsController : ControllerBase
     {
         private readonly IDbService _dbService;
+        private IStudentDbService _service;
         public string connectionString = "Data source=db-mssql;Initial Catalog=s18313;Integrated Security=True";
 
-        public StudentsController(IDbService dbService)
+        public StudentsController(IDbService dbService, IStudentDbService service)
         {
+            _service = service;
             _dbService = dbService;
         }
         [HttpGet()]
@@ -55,7 +58,7 @@ namespace Cw3.Controllers
         }
 
         [HttpGet("{id}")]
-        public IActionResult GetStudent(int id)
+        public IActionResult GetStudent(string id)
         {
             /*
             if(id == 1)
@@ -94,6 +97,8 @@ namespace Cw3.Controllers
             }
 
             return Ok(listOfEnrollments);
+            //var response = _service.GetStudent(id);
+            //return response;
         }
 
         [HttpPost]
