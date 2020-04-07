@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using System.Linq;
 using System.Threading.Tasks;
 using Cw3.DAL;
+using Cw3.Middlewares;
 using Cw3.Services;
 using Microsoft.AspNetCore.Builder;
 using Microsoft.AspNetCore.Hosting;
@@ -40,6 +41,8 @@ namespace Cw3
                 app.UseDeveloperExceptionPage();
             }
 
+            app.UseMiddleware<LoggingMiddleware>();
+
             app.Use(async (context, next) =>
             {
                 if (!context.Request.Headers.ContainsKey("Index"))
@@ -48,7 +51,7 @@ namespace Cw3
                     await context.Response.WriteAsync("Nie poda³eœ indeksu");
                     return;
                 }
-                //jak sprawdzic to z baza danych?
+
                 string index = context.Request.Headers["Index"].ToString();
                 if(_service.GetStudent(index) == false)
                 {
