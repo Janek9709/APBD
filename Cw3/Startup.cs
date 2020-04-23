@@ -40,7 +40,7 @@ namespace Cw3
                     ValidateLifetime = true,
                     ValidIssuer = "jan",
                     ValidAudience="Students",
-                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(Configuration["SecretKey"]))
+                    IssuerSigningKey = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("asbasbasbasbasbasbasbasbasbaswa"))
                 };
             });
             services.AddSingleton<IDbService, MockDbService>();

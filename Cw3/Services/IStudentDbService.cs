@@ -1,4 +1,5 @@
 ﻿using Cw3.DTO_s.Requests;
+using Cw3.DTO_s.Responses;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
@@ -16,5 +17,9 @@ namespace Cw3.Services
         public bool GetStudent(string id);
 
         public bool CheckLoginRequest(LoginRequestDto request);
+
+        public bool WriteToken(Guid guid, string request);
+
+        public TokenResponse CheckToken(string incomingToken);
     }
 }

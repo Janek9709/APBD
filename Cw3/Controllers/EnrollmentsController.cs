@@ -6,6 +6,7 @@ using System.Security.Claims;
 using System.Text;
 using System.Threading.Tasks;
 using Cw3.DTO_s.Requests;
+using Cw3.DTO_s.Responses;
 using Cw3.Services;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -46,7 +47,7 @@ namespace Cw3.Controllers
 
         }
 
-        [HttpPost("login")]//haslo to ALA do testow
+        [HttpPost("login")]//haslo to ALA  a login s0034
         [AllowAnonymous]
         public IActionResult Login(LoginRequestDto request)
         {
@@ -59,7 +60,7 @@ namespace Cw3.Controllers
                 new Claim(ClaimTypes.Role, "employee")
             };
 
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes(_configuration["SecretKey"]));
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("asbasbasbasbasbasbasbasbasbaswa"));
             var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
 
             var token = new JwtSecurityToken
@@ -71,11 +72,60 @@ namespace Cw3.Controllers
                     signingCredentials: creds
                 );
 
+            var laterGuid = Guid.NewGuid();
+
+            if (!_service.WriteToken(laterGuid, request.Login))
+                return Unauthorized();
+
             return Ok(new
             {
                 token = new JwtSecurityTokenHandler().WriteToken(token),
-                refreshToken = Guid.NewGuid()
+                refreshToken = laterGuid
             });
         }
+
+        [HttpPost("refreshToken")]
+        [AllowAnonymous]
+        public IActionResult RefreshToken(RefreshTokenRequest incomingToken)
+        {
+            if (incomingToken.Token == null)
+                return Unauthorized();
+
+            TokenResponse request  = _service.CheckToken(incomingToken.Token);
+
+            if (request.number <= 0)
+                return Unauthorized();
+
+            var claims = new[]
+            {
+                new Claim(ClaimTypes.Name, request.Login),
+                new Claim(ClaimTypes.Role, "employee")
+            };
+
+            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("asbasbasbasbasbasbasbasbasbaswa"));
+            var creds = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
+
+            var token = new JwtSecurityToken
+                (
+                    issuer: "jan",
+                    audience: "Students",
+                    claims: claims,
+                    expires: DateTime.Now.AddMinutes(10),
+                    signingCredentials: creds
+                );
+
+
+            var laterGuid = Guid.NewGuid();
+
+            if (!_service.WriteToken(laterGuid, request.Login))
+                return Unauthorized();
+
+            return Ok(new
+            {
+                token = new JwtSecurityTokenHandler().WriteToken(token),
+                refreshToken = laterGuid
+            });
+        }
+
     }
 }

@@ -236,7 +236,7 @@ namespace Cw3.Services
                     command.Connection = connection;
                     command.CommandText = "SELECT SALT FROM STUDENT WHERE INDEXNUMBER = @INDEX";
                     command.Parameters.AddWithValue("INDEX", request.Login);
-                    
+
                     var dr = command.ExecuteReader();
 
                     if (!dr.Read())
@@ -278,6 +278,90 @@ namespace Cw3.Services
                                     numBytesRequested: 256 / 8);
 
             return Convert.ToBase64String(valueBytes);
+        }
+
+        public bool WriteToken(Guid guid, string request)
+        {
+            using (var connection = new SqlConnection(connectionString))
+            using (var command = new SqlCommand())
+            {
+                connection.Open();
+                var transaction2 = connection.BeginTransaction("addToken");
+                try
+                {
+                    command.Connection = connection;
+                    command.Transaction = transaction2;
+                    command.CommandText = "UPDATE STUDENT SET TOKEN = @RETOKEN WHERE INDEXNUMBER = @IND";
+                    command.Parameters.AddWithValue("RETOKEN", guid.ToString());
+                    command.Parameters.AddWithValue("IND", request);
+                    command.ExecuteNonQuery();
+
+                    transaction2.Commit();
+
+                    return true;
+                }
+                catch (SqlException exception)
+                {
+                    transaction2.Rollback();
+                    return false;
+
+                }
+
+            }
+        }
+
+        public TokenResponse CheckToken(string incomingToken)
+        {
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "SELECT INDEXNUMBER, COUNT(1) AS TKN FROM STUDENT WHERE TOKEN = @ITOKEN GROUP BY INDEXNUMBER";
+                    command.Parameters.AddWithValue("ITOKEN", incomingToken);
+
+                    var dr = command.ExecuteReader();
+
+                    var badReturnResponse = new TokenResponse
+                    {
+                        Login = "wrong",
+                        number = 0
+                    };
+
+
+                    if (!dr.Read())
+                        return badReturnResponse;
+
+
+                    var index = dr["INDEXNUMBER"].ToString();
+                    var token = (int) dr["TKN"];
+
+                    dr.Close();
+
+
+
+                    var returnResponse = new TokenResponse
+                    {
+                       Login = index,
+                       number = token
+                    };
+
+                    return returnResponse;
+
+                }
+            }
+            catch (SqlException exception)
+            {
+                var returnResponse = new TokenResponse
+                {
+                    Login = "wrong",
+                    number = 0
+                };
+
+                return returnResponse;
+            }
         }
     }
 }
