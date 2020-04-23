@@ -1,11 +1,13 @@
 ﻿using Cw3.DTO_s.Requests;
 using Cw3.DTO_s.Responses;
 using Cw3.Models;
+using Microsoft.AspNetCore.Cryptography.KeyDerivation;
 using Microsoft.AspNetCore.Mvc;
 using System;
 using System.Collections.Generic;
 using System.Data.SqlClient;
 using System.Linq;
+using System.Text;
 using System.Threading.Tasks;
 
 namespace Cw3.Services
@@ -221,6 +223,61 @@ namespace Cw3.Services
 
                 }
             }
+        }
+
+        public bool CheckLoginRequest(LoginRequestDto request)
+        {
+            try
+            {
+                using (var connection = new SqlConnection(connectionString))
+                using (var command = new SqlCommand())
+                {
+                    connection.Open();
+                    command.Connection = connection;
+                    command.CommandText = "SELECT SALT FROM STUDENT WHERE INDEXNUMBER = @INDEX";
+                    command.Parameters.AddWithValue("INDEX", request.Login);
+                    
+                    var dr = command.ExecuteReader();
+
+                    if (!dr.Read())
+                        return false;
+
+                    var salt = dr["SALT"].ToString();
+                    dr.Close();
+                    //tworzymy hash
+                    var hashToValidate = Hash2(request.Password, salt);
+                    Console.WriteLine(hashToValidate);
+                    command.CommandText = "SELECT COUNT(1) AS LICZBA FROM STUDENT WHERE INDEXNUMBER = @INDEX2 AND PASSWORD = @PASS";
+                    command.Parameters.AddWithValue("INDEX2", request.Login);
+                    command.Parameters.AddWithValue("PASS", hashToValidate);
+                    dr = command.ExecuteReader();
+                    dr.Read();
+                    var number = (int)dr["LICZBA"];
+                    Console.WriteLine(number);
+                    dr.Close();
+                    if (number > 0)
+                        return true;
+                    else
+                        return false;
+
+                }
+            }
+            catch (SqlException exception)
+            {
+                return false;
+            }
+        }
+
+        private string Hash2(string password, string salt)
+        {
+            var valueBytes = KeyDerivation.Pbkdf2(
+                                    password: password,
+                                    salt: Encoding.UTF8.GetBytes(salt),
+                                    prf: KeyDerivationPrf.HMACSHA512,
+                                    iterationCount: 10,
+                                    numBytesRequested: 256 / 8);
+
+            return Convert.ToBase64String(valueBytes);
         }
     }
 }

@@ -6,3 +6,242 @@
 1. Metoda: POST 2. Sciezka: /api/students  3. Cialo: {
 	"Index::"2"
 }  4. Query: ?id=2 
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "ALA",
+	"PASSWORD": "ASAWAW"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "ALA",
+	"Password": "ASAWAW"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "ALA",
+	"Password": "ASAWAW"
+}  4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0037",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0037",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /  3. Cialo:   4. Query:  
+1. Metoda: GET 2. Sciezka: /favicon.ico  3. Cialo:   4. Query:  
+1. Metoda: POST 2. Sciezka: /api/enrollments/login  3. Cialo: {
+	"Login": "s0034",
+	"Password": "ALA"
+}  4. Query:  

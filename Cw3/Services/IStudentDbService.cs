@@ -14,5 +14,7 @@ namespace Cw3.Services
         public IActionResult PromoteStudent(PromoteStudentRequest request);
 
         public bool GetStudent(string id);
+
+        public bool CheckLoginRequest(LoginRequestDto request);
     }
 }
