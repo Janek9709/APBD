@@ -355,13 +355,13 @@ namespace LinqConsoleApp
             //1. Query syntax (SQL)
             var res = (from emp in Emps
                        where emp.Job == "Backend programmer"
-                       select emp).Count();
+                       select emp).Count() > 0 ? true : false;
 
 
             //2. Lambda and Extension methods
             var res2 = Emps.Any(x => x.Job == "Backend programmer");
 
-            Console.WriteLine(res > 0 ? true : false);
+            Console.WriteLine(res);
             Console.WriteLine(res2);
         }
 

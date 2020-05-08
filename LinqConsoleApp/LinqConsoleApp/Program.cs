@@ -8,7 +8,15 @@ namespace LinqConsoleApp
         {
             var d = new LinqSamples();
             //d.Przyklad1();
+            //d.Przyklad2();
+            //d.Przyklad3();
+            //d.Przyklad4();
+            //d.Przyklad5();
+            //d.Przyklad6();
+            //d.Przyklad7();
+            //d.Przyklad8();
             d.Przyklad10Button_Click();
+
         }
     }
 }
